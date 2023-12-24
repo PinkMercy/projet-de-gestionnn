@@ -1,0 +1,28 @@
+{
+  "formations": [
+    {
+      "id": 1,
+      "category": "managment",
+      "title": "gestion de projet",
+      "duration": "1 weeks",
+      "price": "free",
+      "date": "01/01/2020"
+    },
+    {
+      "id": 2,
+      "category": "managment",
+      "title": "gestionnnnnnnnn de projet",
+      "duration": "1 weeks",
+      "price": "free",
+      "date": "01/01/2020"
+    },
+    {
+      "id": 3,
+      "category": "marketing",
+      "title": "aaaa",
+      "duration": "1 weeks",
+      "price": "free",
+      "date": "01/03/2020"
+    }
+  ]
+}

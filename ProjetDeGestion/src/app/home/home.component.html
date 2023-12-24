@@ -1,0 +1,92 @@
+
+  <div>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Iset Rades</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="ProjetDeGestion\src\app\app.component.html">Accueil
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/formations">Formations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Espace Candidats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Espace Formateurs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="card text-white bg-secondary mb-3" style=" 
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 1000px;
+                height: 500px;">
+    <!-- <div class="card-header">Header</div> -->
+    <div class="card-body" style=" width: 1000px;
+    height: 500px;">
+      <h4 class="card-title " style=" text-align: center;">Welcome to Iset Rades</h4>
+      <p class="card-text " style=" width: 1000px;
+      height: 90px;
+      font-size: larger;">Explorez notre site pour des formations pointues en Java, Angular, marketing numérique,
+        multimédia, et plus encore. Nos programmes interactifs, dirigés par des experts, vous offrent des opportunités
+        d'apprentissage ciblées pour développer vos compétences professionnelles. Trouvez la formation adaptée à vos
+        objectifs dès maintenant.
+      </p>
+      <img src="https://rami.tn/wp-content/uploads/2023/07/ISET-Rades.webp" alt="aaa"
+        style="width: 965px; height:fit-content;">
+    </div>
+    <table class="table table-bordered mt-3">
+      <thead>
+        <tr>
+          <th scope="col">catégorie</th>
+          <th scope="col">titre</th>
+          <th scope="col">durée</th>
+          <th scope="col">prix</th>
+          <th scope="col">date</th>
+        </tr>
+      </thead>
+      <tbody>
+                                            <!-- be right back just 2 min  -->
+         <tr *ngFor="let f of formations">
+          <td>{{f.category}}</td>
+          <td>{{f.title}}</td>
+          <td>{{f.duration}}</td>
+          <td>{{f.price}}</td>
+          <td>{{f.date}}</td>
+         </tr>
+        
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>    
+  </div>
+
+
