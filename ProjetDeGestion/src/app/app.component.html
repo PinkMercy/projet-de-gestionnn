@@ -9,7 +9,6 @@
 
 <body>
   <router-outlet>
-<h2>qsdq</h2>
     <div>
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
@@ -21,13 +20,13 @@
           <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="ProjetDeGestion\src\app\app.component.html">Accueil
+                <a class="nav-link active" href="#">Accuiel
                   <span class="visually-hidden">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="/formations">Formations</a>
-              </li>
+                <a class="nav-link" routerLink="../formations">Formations</a>
+               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Espace Candidats</a>
               </li>
@@ -46,17 +45,17 @@
                 </div>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
     </div>
+     <!-- <app-home></app-home>  -->
   </router-outlet>
-  <!-- <app-home></app-home> -->
-  <app-formations></app-formations>
+  
+<!-- <app-formations></app-formations>  -->
 </body>
 
-</html>
+</html> 
+<!-- <input type="text" #pokemon/>
+<button (click)="handleClick(pokemon.value)">Search</button>
+<h1>{{pokemon.value}}</h1> -->

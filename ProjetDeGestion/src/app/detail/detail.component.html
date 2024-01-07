@@ -1,0 +1,19 @@
+<!-- details.component.html -->
+<div>
+    <h2>Details for ID, {{id}}</h2>
+    <table>
+        <thead>
+            This is the table
+        </thead>
+        <tbody> 
+            <tr *ngFor="let f of formation">
+                <td>{{f.category}}</td>
+                <td>{{f.title}}</td>
+                <td>{{f.duration}}</td>
+                <td>{{f.price}}</td>
+                <td>{{f.date}}</td>
+               </tr>
+        </tbody>
+    </table>
+    <!-- Display fetched details here -->
+</div>

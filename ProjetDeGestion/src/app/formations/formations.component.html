@@ -1,2 +1,28 @@
 <p>formations works!</p>
 {{title}}
+<form class="d-flex">
+  <input class="form-control me-sm-2" type="text"   (change)="test($event)">
+  <!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> -->
+</form>
+<table class="table table-bordered mt-3">
+    <thead>
+      <tr>
+        <th scope="col">catégorie</th>
+        <th scope="col">titre</th>
+        <th scope="col">durée</th>
+        <th scope="col">prix</th>
+        <th scope="col">date</th>
+        <th scope="col">detail</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let f of formations | filter:SearchText:'title':'category' " >
+        <td>{{f.category}}</td>
+        <td>{{f.title}}</td>
+        <td>{{f.duration}}</td>
+        <td>{{f.price}}</td>
+        <td>{{f.date}}</td>
+        <td><a routerLink="../detail/{{f.id}}">detail</a></td>
+       </tr>
+    </tbody>
+  </table>    
